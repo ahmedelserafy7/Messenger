@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F028A271EF2BCE70037E575 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F028A261EF2BCE70037E575 /* ChatLogController.swift */; };
+		1F028A2A1EF4C8120037E575 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F028A291EF4C8120037E575 /* CustomTabBarController.swift */; };
 		1F71F4111EF0B1DA00D6AF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4101EF0B1DA00D6AF49 /* AppDelegate.swift */; };
-		1F71F4131EF0B1DA00D6AF49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4121EF0B1DA00D6AF49 /* ViewController.swift */; };
-		1F71F4161EF0B1DA00D6AF49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F71F4141EF0B1DA00D6AF49 /* Main.storyboard */; };
+		1F71F4131EF0B1DA00D6AF49 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4121EF0B1DA00D6AF49 /* FriendsController.swift */; };
 		1F71F4191EF0B1DA00D6AF49 /* FbMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4171EF0B1DA00D6AF49 /* FbMessenger.xcdatamodeld */; };
 		1F71F41B1EF0B1DA00D6AF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F71F41A1EF0B1DA00D6AF49 /* Assets.xcassets */; };
 		1F71F41E1EF0B1DA00D6AF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F71F41C1EF0B1DA00D6AF49 /* LaunchScreen.storyboard */; };
+		1F71F4261EF0B2C000D6AF49 /* FriendsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4251EF0B2C000D6AF49 /* FriendsControllerHelper.swift */; };
+		1F71F4471EF0D7D600D6AF49 /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4431EF0D7D600D6AF49 /* Message+CoreDataClass.swift */; };
+		1F71F4481EF0D7D600D6AF49 /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4441EF0D7D600D6AF49 /* Message+CoreDataProperties.swift */; };
+		1F71F4491EF0D7D600D6AF49 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4451EF0D7D600D6AF49 /* Friend+CoreDataClass.swift */; };
+		1F71F44A1EF0D7D600D6AF49 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F4461EF0D7D600D6AF49 /* Friend+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F028A261EF2BCE70037E575 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		1F028A291EF4C8120037E575 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		1F71F40D1EF0B1DA00D6AF49 /* FbMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FbMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F71F4101EF0B1DA00D6AF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F71F4121EF0B1DA00D6AF49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1F71F4151EF0B1DA00D6AF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F71F4121EF0B1DA00D6AF49 /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
 		1F71F4181EF0B1DA00D6AF49 /* FbMessenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FbMessenger.xcdatamodel; sourceTree = "<group>"; };
 		1F71F41A1EF0B1DA00D6AF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F71F41D1EF0B1DA00D6AF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F71F41F1EF0B1DA00D6AF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F71F4251EF0B2C000D6AF49 /* FriendsControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsControllerHelper.swift; sourceTree = "<group>"; };
+		1F71F4431EF0D7D600D6AF49 /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1F71F4441EF0D7D600D6AF49 /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1F71F4451EF0D7D600D6AF49 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1F71F4461EF0D7D600D6AF49 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +69,16 @@
 			isa = PBXGroup;
 			children = (
 				1F71F4101EF0B1DA00D6AF49 /* AppDelegate.swift */,
-				1F71F4121EF0B1DA00D6AF49 /* ViewController.swift */,
-				1F71F4141EF0B1DA00D6AF49 /* Main.storyboard */,
+				1F71F4121EF0B1DA00D6AF49 /* FriendsController.swift */,
+				1F71F4251EF0B2C000D6AF49 /* FriendsControllerHelper.swift */,
+				1F028A261EF2BCE70037E575 /* ChatLogController.swift */,
+				1F028A291EF4C8120037E575 /* CustomTabBarController.swift */,
 				1F71F41A1EF0B1DA00D6AF49 /* Assets.xcassets */,
 				1F71F41C1EF0B1DA00D6AF49 /* LaunchScreen.storyboard */,
+				1F71F4431EF0D7D600D6AF49 /* Message+CoreDataClass.swift */,
+				1F71F4441EF0D7D600D6AF49 /* Message+CoreDataProperties.swift */,
+				1F71F4451EF0D7D600D6AF49 /* Friend+CoreDataClass.swift */,
+				1F71F4461EF0D7D600D6AF49 /* Friend+CoreDataProperties.swift */,
 				1F71F41F1EF0B1DA00D6AF49 /* Info.plist */,
 				1F71F4171EF0B1DA00D6AF49 /* FbMessenger.xcdatamodeld */,
 			);
@@ -129,7 +147,6 @@
 			files = (
 				1F71F41E1EF0B1DA00D6AF49 /* LaunchScreen.storyboard in Resources */,
 				1F71F41B1EF0B1DA00D6AF49 /* Assets.xcassets in Resources */,
-				1F71F4161EF0B1DA00D6AF49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,23 +157,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F71F4131EF0B1DA00D6AF49 /* ViewController.swift in Sources */,
+				1F028A271EF2BCE70037E575 /* ChatLogController.swift in Sources */,
+				1F71F4131EF0B1DA00D6AF49 /* FriendsController.swift in Sources */,
+				1F028A2A1EF4C8120037E575 /* CustomTabBarController.swift in Sources */,
 				1F71F4111EF0B1DA00D6AF49 /* AppDelegate.swift in Sources */,
+				1F71F4481EF0D7D600D6AF49 /* Message+CoreDataProperties.swift in Sources */,
 				1F71F4191EF0B1DA00D6AF49 /* FbMessenger.xcdatamodeld in Sources */,
+				1F71F4261EF0B2C000D6AF49 /* FriendsControllerHelper.swift in Sources */,
+				1F71F44A1EF0D7D600D6AF49 /* Friend+CoreDataProperties.swift in Sources */,
+				1F71F4491EF0D7D600D6AF49 /* Friend+CoreDataClass.swift in Sources */,
+				1F71F4471EF0D7D600D6AF49 /* Message+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1F71F4141EF0B1DA00D6AF49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F71F4151EF0B1DA00D6AF49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1F71F41C1EF0B1DA00D6AF49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -267,8 +283,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WY4TJYTZW4;
 				INFOPLIST_FILE = FbMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedElserafy.FbMessenger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahmed.Elserafy.FbMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -280,8 +297,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WY4TJYTZW4;
 				INFOPLIST_FILE = FbMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedElserafy.FbMessenger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahmed.Elserafy.FbMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -306,6 +324,7 @@
 				1F71F4241EF0B1DA00D6AF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
