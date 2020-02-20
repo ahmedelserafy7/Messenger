@@ -45,9 +45,6 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
         })
     }
 
-    
-   // var messages : [Message]?
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tabBarController?.tabBar.isHidden = false
@@ -73,8 +70,7 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Mark", style: .plain, target: self, action: #selector(addMark))
     }
     
-    
-    func addMark() {
+    @objc func addMark() {
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let mark = NSEntityDescription.insertNewObject(forEntityName: "Friend", into: context) as! Friend
@@ -130,7 +126,6 @@ class messageCell: BaseClass {
             nameLabel.textColor = isHighlighted ? UIColor.white : UIColor.black
             messageLabel.textColor = isHighlighted ? UIColor.white : .black
             timeLabel.textColor = isHighlighted ? .white : .black
-           // print(isHighlighted)
         }
     }
     var message : Message? {
@@ -167,7 +162,6 @@ class messageCell: BaseClass {
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        // imageView.image = UIImage(named: "zuckerberg")
         imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 34
@@ -201,7 +195,6 @@ class messageCell: BaseClass {
         let timeLabel = UILabel()
         timeLabel.text = "12:05 PM"
         timeLabel.textAlignment = .right
-        //  timeLabel.textColor = UIColor.darkGray
         timeLabel.font = UIFont.systemFont(ofSize: 16)
         return timeLabel
     }()
@@ -209,7 +202,6 @@ class messageCell: BaseClass {
     let hasReadImageView: UIImageView = {
         let hasImageView = UIImageView()
         hasImageView.contentMode = .scaleAspectFill
-        //  hasImageView.image = UIImage(named: "Zuckerberg")
         hasImageView.layer.cornerRadius = 10
         hasImageView.layer.masksToBounds = true
         return hasImageView
@@ -221,17 +213,6 @@ class messageCell: BaseClass {
         addSubview(profileImageView)
         addSubview(dividerLine)
         setupContainerView()
-        
-        /*
-         profileImageView.translatesAutoresizingMaskIntoConstraints = false
-         dividedLine.translatesAutoresizingMaskIntoConstraints = false
-         
-         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[v0(68)]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": profileImageView]))
-         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-12-[v0(68)]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": profileImageView]))
-         
-         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-82-[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":dividedLine]))
-         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[v0(1)]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":dividedLine]))
-         */
         
         addConstraints(format: "H:|-12-[v0(68)]", views: profileImageView)
         addConstraints(format: "V:[v0(68)]", views: profileImageView)
@@ -250,7 +231,7 @@ class messageCell: BaseClass {
         addConstraints(format: "H:|-90-[v0]|", views: containerView)
         addConstraints(format: "V:[v0(50)]", views: containerView)
         addConstraint(NSLayoutConstraint(item: containerView, attribute:.centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
-        // it must see the subView before to put constraints
+        // It must see the subView before to put constraints
         containerView.addSubview(nameLabel)
         containerView.addSubview(messageLabel)
         containerView.addSubview(timeLabel)
@@ -275,7 +256,7 @@ extension UIView {
             view.translatesAutoresizingMaskIntoConstraints = false
             
         }
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: dictionaryViews))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: dictionaryViews))
     }
     
 }
@@ -290,8 +271,8 @@ class BaseClass: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     func setupView() {
-       // backgroundColor = UIColor.blue
     }
 }
 
