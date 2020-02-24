@@ -1,6 +1,7 @@
 # Messenger
 
-<img src="https://imgur.com/82JSazO.png" ><img src="https://i.imgur.com/eMWegFD.png"><img src="https://i.imgur.com/3ulhLSE.png">
+<img src="https://imgur.com/82JSazO.png" ><img src="https://i.imgur.com/eMWegFD.png">
+<img src="https://i.imgur.com/3ulhLSE.png"><img src="https://i.imgur.com/z2whcAf.png">
 
 ## Description
 
@@ -17,4 +18,4 @@ This project is a mocking app like **Messenger**.
 
 This project requires: 
 * **Xcode 10+** 
-* **iOS 12.0+**
+* **iOS 12.4+**
