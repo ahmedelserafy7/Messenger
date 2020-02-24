@@ -8,8 +8,8 @@ This project is a mocking app like **Messenger**.
 
 ## Used Skills
 
-1. Creating **tab bar** menu.
-2. Creating **Chat bubbles**.
+1. Creating **Tab Bar** menu.
+2. Creating **Chat Bubbles**.
 3. Using **Core Data** Entities.
 
  
