@@ -4,8 +4,7 @@
 <img src="https://i.imgur.com/WDwZWOP.png"><img src="https://i.imgur.com/OABYtbQ.png">
 
 ## Description
-
-This project is a mocking app like **Messenger**.
+**Messenger** is a mocking app which shows up chats between people and tech/politics role models to hang out with them.
 
 ## Used Skills
 
