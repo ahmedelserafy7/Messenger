@@ -54,9 +54,6 @@ class ChatLogController: UICollectionViewController,UICollectionViewDelegateFlow
     }()
     
     @objc func handleFunction() {
-    
-        print(textField.text!)
-        
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let context = delegate.persistentContainer.viewContext
         FriendsController.createMessagesWithText(text: textField.text!, friend: friend!, minutesAgo: 0, context: context, isSender: true)
@@ -68,7 +65,6 @@ class ChatLogController: UICollectionViewController,UICollectionViewDelegateFlow
         } catch let err {
             print(err)
         }
-        
     }
     
     let topBorderView: UIView = {
@@ -77,8 +73,8 @@ class ChatLogController: UICollectionViewController,UICollectionViewDelegateFlow
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     var bottomContainer: NSLayoutConstraint?
-   
     @objc func simulateFunction(){
         print("Simulate")
         let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -105,13 +101,11 @@ class ChatLogController: UICollectionViewController,UICollectionViewDelegateFlow
             blockOperation.append(BlockOperation(block: {
                self.collectionView?.insertItems(at: [newIndexPath! as IndexPath])
             }))
-             
-            
         }
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-       /* every time you insert the message, it will show in the collection View --- performBatchUpdates here to run the the top controller function especially blockOperation*/
+       /* Every time you insert the message, it will show in the collection View --- performBatchUpdates here to run the the top controller function especially blockOperation*/
         collectionView?.performBatchUpdates({
             for operation in self.blockOperation {
                 operation.start()
@@ -126,7 +120,7 @@ class ChatLogController: UICollectionViewController,UICollectionViewDelegateFlow
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
-             try fetchedResultsController.performFetch()
+            try fetchedResultsController.performFetch()
         }catch let err {
             print(err)
         }
@@ -236,10 +230,9 @@ class ChatLogController: UICollectionViewController,UICollectionViewDelegateFlow
                 
             } else {
                 // outgoing sending messages
-                
                 cell.textMessageView.frame = CGRect(x: view.frame.width - estimatedFrame.width - 10 - 12 - 2, y: 0, width: estimatedFrame.width + 10, height: estimatedFrame.height + 20)
                 
-                cell.textBubbleView.frame = CGRect(x: view.frame.width - estimatedFrame.width - 4 - 10 - 12 - 4, y: -2, width: estimatedFrame.width + 10 + 4 + 12 , height: estimatedFrame.height + 20 + 4)
+                cell.textBubbleView.frame = CGRect(x: view.frame.width - estimatedFrame.width - 8 - 10 - 12, y: -2, width: estimatedFrame.width + 10 + 4 + 12, height: estimatedFrame.height + 20 + 4)
                 
                 cell.profileImageView.isHidden = true
                
@@ -247,8 +240,6 @@ class ChatLogController: UICollectionViewController,UICollectionViewDelegateFlow
               cell.bubbleImageView.image = ChatMessageCell.blueBubbleImageView
               cell.textMessageView.textColor = .white
             }
-            
-            
         }
  
         return cell
@@ -312,7 +303,6 @@ class ChatMessageCell: BaseClass {
         return imageView
     }()
  
-    
     override func setupView() {
         super.setupView()
         addSubview(textBubbleView)
